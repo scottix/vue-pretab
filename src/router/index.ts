@@ -5,7 +5,11 @@ import Tabs from '../views/Tabs.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/tabs/tab1'
+    redirect: 'pretab'
+  },
+  {
+    path: '/pretab',
+    component: () => import('@/views/PreTab.vue')
   },
   {
     path: '/tabs/',
